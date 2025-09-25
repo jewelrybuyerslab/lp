@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jewelry Buyers Lab（ジュエリーバイヤーズラボ）｜仕入れコミュニティ</title>
+  <meta name="description" content="副業・個人事業主・法人歓迎。審査制のクローズドサロンでハイブランドジュエリーの仕入れルート・価格表・販売ノウハウを提供します。" />
+  <style>
+    :root{
+      --bg:#0b0b0b; --card:#111; --text:#f4f4f4; --muted:#bdbdbd; --gold:#d4af37; --accent:#f7edd0;
+      --radius:12px; --wide:1120px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--text);}
+    a{color:var(--gold);text-decoration:none}
+    .wrap{max-width:var(--wide);margin:0 auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #141414}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:46px;height:46px;border-radius:8px;background:linear-gradient(135deg,#f9e9b7,#b78f22);display:flex;align-items:center;justify-content:center;font-weight:800;color:#1a1400}
+    h1{margin:18px 0 8px;font-size:28px;line-height:1.15}
+    p.lead{margin:0;color:var(--muted)}
+
+    .hero{display:flex;gap:24px;align-items:center;margin-top:26px}
+    .hero .left{flex:1}
+    .hero .card{background:var(--card);padding:22px;border-radius:12px;border:1px solid #1a1a1a}
+    .illus img{width:320px;height:320px;border-radius:12px;background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(212,175,55,.02));display:flex;align-items:center;justify-content:center;font-size:40px;color:var(--accent);letter-spacing:6px}
+
+    .badges{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+    .badge{padding:8px 12px;background:transparent;border:1px solid #1a1a1a;border-radius:999px;color:var(--muted);font-size:13px}
+
+    .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:10px;font-weight:700;border:none;cursor:pointer}
+    .primary{background:linear-gradient(180deg,var(--gold),#b78f22);color:#160f00}
+    .ghost{background:transparent;border:1px solid #222;color:var(--text)}
+
+    section{margin-top:34px}
+    .grid{display:grid;gap:16px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .feature{background:var(--card);padding:18px;border-radius:12px;border:1px solid #141414}
+    .feature h3{margin:0 0 8px}
+    .feature p{margin:0;color:var(--muted)}
+
+    .steps{display:flex;gap:12px}
+    .step{background:var(--card);padding:14px;border-radius:10px;border:1px solid #141414;flex:1}
+
+    .plans{display:flex;gap:12px;align-items:stretch}
+    .plan{flex:1;background:linear-gradient(180deg,#0f0f0f,#0c0c0c);padding:18px;border-radius:12px;border:1px solid #161616}
+    .plan .price{font-size:20px;color:var(--gold);margin-top:8px}
+
+    details{background:var(--card);padding:12px;border-radius:10px;border:1px solid #141414}
+
+    form{display:grid;gap:12px}
+    input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #222;background:#0e0e0e;color:var(--text)}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .note{color:var(--muted);font-size:13px;margin-top:8px}
+
+    footer{margin-top:40px;padding:18px 0;border-top:1px solid #141414;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){.hero{flex-direction:column}.illus{width:100%;height:160px}.grid-3{grid-template-columns:1fr}.plans{flex-direction:column}.form-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">JBL</div>
+        <div>
+          <div style="font-weight:700">Jewelry Buyers Lab</div>
+          <div style="font-size:12px;color:var(--muted)">審査制クローズド｜副業・個人事業主・法人歓迎</div>
+        </div>
+      </div>
+      <div><a class="btn ghost" href="#entry">事前エントリー</a></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="left">
+          <div class="card">
+            <h1>副業で稼ぐ人のための<br><strong style="color:var(--gold)">ジュエリー仕入れ</strong>コミュニティ</h1>
+            <p class="lead">限定ルート・共同仕入れ・販売テンプレを届け、最短で回転して利益を出すための実践型サロンです。</p>
+            <div class="badges">
+              <div class="badge">審査制</div>
+              <div class="badge">NDA必須</div>
+              <div class="badge">在宅で運用可</div>
+              <div class="badge">ノウハウ重視</div>
+            </div>
+            <div class="cta">
+              <button class="btn primary" onclick="location.hash='#entry'">無料で事前エントリー</button>
+              <a class="btn ghost" href="#features">詳しい内容を見る</a>
+            </div>
+          </div>
+        </div>
+        <div class="illus"><img src="img/jbl-logo.png"></div>
+      </section>
+
+      <section id="features">
+        <h2>JBLで手に入るもの</h2>
+        <div class="grid grid-3">
+          <div class="feature">
+            <h3>限定仕入れルート</h3>
+            <p>偽物リスクの低い信頼ルートを共有。価格表と発注のコツを提供します。</p>
+          </div>
+          <div class="feature">
+            <h3>販売テンプレ×写真指導</h3>
+            <p>売れる商品ページのテンプレ・撮影指示・出品文の最適化サポート。</p>
+          </div>
+          <div class="feature">
+            <h3>買取先・査定ネットワーク</h3>
+            <p>早期現金化のための買取先紹介や査定チェックリストを提供。</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>参加の流れ（最短3ステップ）</h2>
+        <div class="steps">
+          <div class="step"><strong>1.</strong> 事前エントリー &amp; 審査</div>
+          <div class="step"><strong>2.</strong> オンボーディング（ルール説明・価格表共有）</div>
+          <div class="step"><strong>3.</strong> 仕入れ→販売→回転</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>会員プラン（サンプル）</h2>
+        <div class="plans">
+          <div class="plan">
+            <div style="font-weight:700">ライト（副業向け）</div>
+            <div class="price">月9,800円</div>
+            <div class="note">ルート一部／月1回相談</div>
+          </div>
+          <div class="plan">
+            <div style="font-weight:700">スタンダード</div>
+            <div class="price">月19,800円</div>
+            <div class="note">共同仕入れ参加可／月2回面談</div>
+          </div>
+          <div class="plan">
+            <div style="font-weight:700">プロ（法人向け）</div>
+            <div class="price">月39,800円</div>
+            <div class="note">優先卸し／個別伴走</div>
+          </div>
+        </div>
+        <div class="note">※価格はサンプルです。本番時に確定します。</div>
+      </section>
+
+      <section>
+        <h2>よくある質問</h2>
+        <details><summary>未経験でも参加できますか？</summary><div class="note">はい。テンプレと伴走でまずは小さく回す運用をご提案します。</div></details>
+        <details><summary>副業でも大丈夫ですか？</summary><div class="note">在宅・隙間時間で運用可能。SKU数や仕入れ頻度は調整できます。</div></details>
+      </section>
+
+      <section id="entry" class="cv-area">
+  <div class="card" style="text-align:center;padding:40px">
+    <h2>今すぐJBLに参加して、仕入れと収益化を加速しましょう</h2>
+    <p class="lead">副業・個人事業主・法人歓迎。限定ルートとノウハウを提供するクローズドサロン。</p>
+    <button class="btn primary" onclick="window.location.href='/thanks.html'">事前エントリーする</button>
+  </div>
+</section>
+
+    </main>
+
+    <footer>
+      <div>© Jewelry Buyers Lab · 2025</div>
+    </footer>
+  </div>
+</body>
+</html>
